@@ -2,8 +2,9 @@ $:.push File.expand_path('lib', __dir__)
 require 'ofx/version'
 
 Gem::Specification.new do |s|
-  s.name        = 'ofx'
+  s.name        = 'ofx_br'
   s.version     = OFX::Version::STRING
+
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Nando Vieira', 'Anna Cruz']
   s.email       = ['fnando.vieira@gmail.com', 'anna.cruz@gmail.com']
@@ -24,7 +25,7 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
   s.licenses      = ['MIT']
 
-  s.add_dependency 'nokogiri', '>= 1.13.1', '< 1.16.0'
+  s.add_dependency 'nokogiri', '>= 1.13.1', '< 1.18.11'
   s.add_development_dependency 'byebug', '~> 11.1.3'
   s.add_development_dependency 'rake', '~> 13.0.6'
   s.add_development_dependency 'rspec', '~> 3.10'
